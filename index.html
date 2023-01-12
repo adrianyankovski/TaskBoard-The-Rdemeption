@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Simple-Task Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Simple Task Form</h1>
+    </header>
+    <main>
+      <form id="add-task-form">
+        <input id="task-title" type="text" placeholder="Task Title" />
+        <textarea id="task-description" placeholder="Description"></textarea>
+        <button type="submit">Create</button>
+      </form>
+      <section id="todo-column" class="task-column">
+        <h2>To Do</h2>
+        <ul id="todo-task"></ul>
+      </section>
+      <button id="move-in-progress" class="move-in-progress">&gt;</button>
+      <section id="in-progress-column" class="task-column">
+        <h2>In Progress</h2>
+        <ul id="in-progress-task"></ul>
+      </section>
+      <button id="move-to-done" class="move-to-done">&gt;</button>
+      <section id="done-column" class="task-column">
+        <h2>Done</h2>
+        <ul id="done-task"></ul>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+  </html>
